@@ -1,0 +1,7 @@
+C:\Users\gopisetty.madhumitha\source\repos\MYOnlineShopping\MOSExeceptions\obj\Debug\MOSExeceptionsLib.csprojAssemblyReference.cache
+C:\Users\gopisetty.madhumitha\source\repos\MYOnlineShopping\MOSExeceptions\obj\Debug\MOSExeceptionsLib.csproj.CoreCompileInputs.cache
+C:\Users\gopisetty.madhumitha\source\repos\MYOnlineShopping\MOSExeceptions\bin\Debug\MOSExeceptions.dll.config
+C:\Users\gopisetty.madhumitha\source\repos\MYOnlineShopping\MOSExeceptions\bin\Debug\MOSExeceptions.dll
+C:\Users\gopisetty.madhumitha\source\repos\MYOnlineShopping\MOSExeceptions\bin\Debug\MOSExeceptions.pdb
+C:\Users\gopisetty.madhumitha\source\repos\MYOnlineShopping\MOSExeceptions\obj\Debug\MOSExeceptions.dll
+C:\Users\gopisetty.madhumitha\source\repos\MYOnlineShopping\MOSExeceptions\obj\Debug\MOSExeceptions.pdb

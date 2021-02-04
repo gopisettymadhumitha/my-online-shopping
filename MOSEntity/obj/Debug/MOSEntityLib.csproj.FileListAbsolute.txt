@@ -1,0 +1,7 @@
+C:\Users\gopisetty.madhumitha\source\repos\MYOnlineShopping\MOSEntity\obj\Debug\MOSEntityLib.csproj.CoreCompileInputs.cache
+C:\Users\gopisetty.madhumitha\source\repos\MYOnlineShopping\MOSEntity\bin\Debug\MOSEntity.dll.config
+C:\Users\gopisetty.madhumitha\source\repos\MYOnlineShopping\MOSEntity\bin\Debug\MOSEntity.dll
+C:\Users\gopisetty.madhumitha\source\repos\MYOnlineShopping\MOSEntity\bin\Debug\MOSEntity.pdb
+C:\Users\gopisetty.madhumitha\source\repos\MYOnlineShopping\MOSEntity\obj\Debug\MOSEntity.dll
+C:\Users\gopisetty.madhumitha\source\repos\MYOnlineShopping\MOSEntity\obj\Debug\MOSEntity.pdb
+C:\Users\gopisetty.madhumitha\source\repos\MYOnlineShopping\MOSEntity\obj\Debug\MOSEntityLib.csprojAssemblyReference.cache

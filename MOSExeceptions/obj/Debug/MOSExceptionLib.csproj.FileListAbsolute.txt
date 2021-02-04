@@ -1,0 +1,2 @@
+C:\Users\gopisetty.madhumitha\source\repos\MYOnlineShopping\MOSExeceptions\obj\Debug\MOSExceptionLib.csprojAssemblyReference.cache
+C:\Users\gopisetty.madhumitha\source\repos\MYOnlineShopping\MOSExeceptions\obj\Debug\MOSExceptionLib.csproj.CoreCompileInputs.cache
