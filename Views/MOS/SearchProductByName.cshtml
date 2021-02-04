@@ -1,0 +1,62 @@
+﻿@model IEnumerable<MOSEntityLib.Product>
+
+@{
+    ViewBag.Title = "Search Product related to that items";
+}
+<div align="center" style="background-color:palegreen;color:white">
+    <h2 style="color:darkred;">Products are Here</h2>
+
+    <p><p style="color:blue">click on home to go to home page @Html.ActionLink("Home", "Index")</p>
+
+
+    </p>
+</div>
+<form style="background-color:deepskyblue">
+    <center>
+        <table class="table" border="1" style="background-color:bisque" width="800" height="200">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Picture)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.ProductName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Discount)
+                </th>
+
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    
+                    <td>
+                        <a href="GetProductDetailsById?id=@item.ProductID">
+                            <img src="~/Images/@item.Picture" width="200" height="200" />
+                        </a>
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                   
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Discount)
+                    </td>
+
+
+
+</tr>
+            }
+
+        </table>
+    </center>
+</form>

@@ -1,0 +1,77 @@
+﻿@model IEnumerable<MOSEntityLib.Product>
+
+@{
+    ViewBag.Title = "viewCart";
+}
+<div  align="center" style="background-color:aqua">
+    <h2 style="color:crimson">View the Cart Items Here</h2>
+
+    <p style="color:blueviolet">
+        click on home to go to home page
+        @Html.ActionLink("Home", "Index")
+    </p>
+</div>
+<div style="background-color:thistle">
+  @if(ViewBag.Message == "") { 
+       <table class="table">
+          <tr>
+             <th>
+               @Html.DisplayNameFor(model => model.ProductID)
+             </th>
+        
+             <th>
+               @Html.DisplayNameFor(model => model.ProductName)
+             </th>       
+
+              <th>
+                @Html.DisplayNameFor(model => model.Picture)
+              </th>
+        
+              <th>
+               @Html.DisplayNameFor(model => model.Price)
+               </th>
+
+
+          </tr>
+
+          @foreach (var item in Model) {
+              <tr>
+                 <td>
+                   @Html.DisplayFor(modelItem => item.ProductID)
+                </td>
+    
+                 <td>
+                   @Html.DisplayFor(modelItem => item.ProductName)
+                 </td>
+    
+                 <td>
+                    <img src="~/Images/@item.Picture" width="200" height="200" />
+                 </td>
+    
+                 <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                 </td>
+   
+                 <td>
+                     @Html.ActionLink("Delete", "DeleteFromCart", new { id=item.ProductID})
+                    
+                 </td>
+                  <br/>
+    
+                 <td>
+                     @Html.ActionLink("Order Now", "AddUserDetails")
+                     
+                 </td>
+    
+
+               </tr>
+           }
+
+        </table>
+   }
+   else
+   {
+    <h1>@ViewBag.Message</h1> 
+  
+   }
+</div>

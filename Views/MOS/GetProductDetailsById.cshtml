@@ -1,0 +1,44 @@
+﻿@model MOSEntityLib.Product
+
+@{
+    ViewBag.Title = "SearchProductByCategoryname";
+}
+
+<div  align="center" style="background-color:aquamarine">
+<h1 style="color:Highlight">Product Details</h1>
+<p>
+<p style="color:blue">click on home to go to home page @Html.ActionLink("Home", "Index")</p>
+
+</p>
+</div>
+<form method="post" action="GetProductDetailsById" style="background-color:darkkhaki">
+    <table>
+        <tr>
+            <td>
+                <img src="@Url.Content("~/Images/" + Model.Picture)" width="200" height="200" />
+            </td>
+            <td>
+                <b>Name</b>:@Html.DisplayFor(model => model.ProductName)<br />
+                <b>Price</b>:@Html.DisplayFor(model => model.Price)<br />
+                <b>Discount</b>:@Html.DisplayFor(model => model.Discount)<br />
+                <b>Content</b>:@Html.DisplayFor(model => model.Content)<br />
+                <b>Description</b>:@Html.DisplayFor(model => model.Description)<br />
+
+            </td>
+            
+
+            <br />
+            <td>
+                <div>
+                @Html.ActionLink("Add To Cart", "AddToCarts", new { id = Model.ProductID, name = Model.ProductName }, new { @class = "btn btn-primary" })
+                </div>
+            </td>
+            <br />
+            @*</center>
+                </form>*@
+        </tr>
+
+    </table>
+</form>
+
+

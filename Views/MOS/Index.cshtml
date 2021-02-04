@@ -1,0 +1,25 @@
+﻿@model IEnumerable<MOSEntityLib.Category>
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div align="center" style="background-color:palegreen;color:white">
+    <h1>@Html.ActionLink("MyOnlineShopping", "Index")</h1><br/>
+    
+    <h4>@Html.ActionLink("MyCart", "viewCart")</h4>
+    
+    <form method="post" action="MOS/SearchProductByName">
+        <center>
+            <input type="text" name="name" placeholder="search products here" width="200" />
+            <input type="submit" value="search" />
+            <br />
+        </center>
+    </form>
+</div>
+<br />
+<div align="center" style="background-color:cadetblue;color:black">
+    <h2 >!!!!!!! HAPPY SHOPPING !!!!!!</h2>
+    <img src="~/Images/online.jpg" width="1000" height="500" />
+</div>
+

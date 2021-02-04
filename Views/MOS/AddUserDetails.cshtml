@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MOSEntityLib.UserDetails>
+@{
+    ViewBag.Title = "AddUserDetails";
+}
+<div style="background-color:darkgray">
+
+<h2  align="center" style="color:crimson">AddUserDetails</h2>
+<p style="color:blueviolet">
+    click on home to go to home page
+    @Html.ActionLink("Home", "Index")
+</p>
+</div>
+
+<form method="post" action="MOS/AddUserDetails"style="background-color:aqua">
+    <table >
+        <center>
+            <tr>
+                <td>user id:</td>
+                <td>
+                    <input type="text" name="id" />
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>user name:</td>
+                <td><input type="text" name="name" /></td>
+            </tr>
+            <tr>
+                <td>user password:</td>
+                <td><input type="password" name="password" /></td>
+            </tr>
+            <tr>
+                <td>user email:</td>
+                <td><input type="email" name="mail" /></td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.ActionLink("submit and order", "OrderNow")
+
+                </td>
+            </tr>
+            <tr>
+                <td> </td>
+                </tr>
+
+        </center>
+    </table>
+</form>
+
+
+
